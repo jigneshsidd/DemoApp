@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageView"
+        android:background="#299dba">
+        <LinearLayout
+            android:id="@+id/valueLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp">
+            <TextView
+                android:id="@+id/fundedValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rs 500"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.4"/>
+            <TextView
+                android:id="@+id/goalsValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rs 5000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="0.4"/>
+
+            <TextView
+                android:id="@+id/timeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="0.1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pledge"
+                android:layout_weight="0.1"
+                android:background="@drawable/round_corner"
+                android:textColor="#299dba"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueLL">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funded"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ends IN"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/titleRL"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_corner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+
+        <ImageView
+            android:id="@+id/heartIcon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/title"
+            android:src="@drawable/heart_image_icon"
+            android:layout_marginStart="80dp"
+            android:layout_toEndOf="@id/title" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="akshfkjahdsahfkash kf haksh asf fsaf as "
+            android:layout_below="@id/title"
+            android:layout_toLeftOf="@id/heartIcon"
+            android:layout_toStartOf="@id/heartIcon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:background="@drawable/circle"
+        android:layout_toRightOf="@id/titleRL"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/titleRL" />
+</RelativeLayout>
